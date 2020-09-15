@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
 }
 
 li {
@@ -8,12 +9,22 @@ li {
 }
 
 ul {
+    display: inline-block;
     padding: 0;
     margin: 0;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-top {
     height: 30px;
+
+    font-size: 0.8em;
+    text-transform: capitalize;
     
     background-color: black;
 }
@@ -32,35 +43,76 @@ ul {
 }
 
 .nav-top-left {
-    padding: 0;
-    margin-left: 20px;
+    margin-left: 14.4px;
 }
 
 #news-link {
     color: white;
 }
 
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0;
-}
-
 .nav-bottom {
     height: 48px;
+
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.nav-bottom a {
+    text-decoration: none;
+    color: gray;
 }
 
 .nav-bottom-right {
+    display: inline-flex;
+    align-items: center;
+    float: right;
     height: 100%;
-    width: 30%;
+
+    border-left: 1px solid rgba(155, 155, 155, 0.282);
 }
 
 .nav-bottom-right img {
     height: 100%;
 }
 
+.nav-bottom-right svg {
+    padding: 16px;
+    color: rgba(0, 0, 0, 0.508);
+}
+
+.search-icon-container {
+    padding: 13px;
+}
+
 .countdown {
-    font-size: 1.5em;
+    padding: 0 10px;
+
+    font-size: 1.7em;
     color: red;
+}
+
+.btn-tickets {
+    height: 28px;
+    width: 90px;
+    margin-right: 10px;
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.8em;
+
+    border: none;
+    border-radius: 3px;
+
+    background-color: #00cccc;
+}
+
+.nav-bottom a:hover,
+.nav-bottom-right svg:hover {
+    color: black;
+}
+
+.nav-bottom-left li {
+    height: 100%;
+    padding: 14.4px;
 }
