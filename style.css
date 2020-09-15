@@ -43,7 +43,7 @@ ul {
 }
 
 .nav-top-left {
-    margin-left: 14.4px;
+    margin-left: 16px;
 }
 
 #news-link {
@@ -107,6 +107,10 @@ ul {
     background-color: #00cccc;
 }
 
+.btn-tickets:hover {
+    background-color: #90c;
+}
+
 .nav-bottom a:hover,
 .nav-bottom-right svg:hover {
     color: black;
@@ -114,5 +118,20 @@ ul {
 
 .nav-bottom-left li {
     height: 100%;
-    padding: 14.4px;
+    padding: 16px;
+}
+
+.popup-info {
+    height: 30px;
+
+    color: black;
+    font-size: 0.8em;
+    text-transform: capitalize;
+    line-height: 30px;
+
+    background-color: #ffdd33;
+}
+
+.popup-info p {
+    margin: 0 16px;
 }
