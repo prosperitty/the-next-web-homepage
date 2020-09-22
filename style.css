@@ -146,7 +146,7 @@ ul {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     height: 60vh;
     max-height: 560px;
     padding: 4px;
@@ -154,7 +154,6 @@ ul {
 
 #grid1 {
     grid-row: span 2;
-
 }
 
 .article-container {
@@ -225,8 +224,7 @@ ul {
 .latest-news-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-    height: 500px;
+    grid-template-rows: 0fr 1fr 1fr;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -239,7 +237,8 @@ ul {
 }
 
 img[src="images/apple-watch-image.jpg"],
-img[src="images/apple-watch-charger.jpg"] {
+img[src="images/apple-watch-charger.jpg"],
+img[src="images/card.png"] {
     width: 100%;
 }
 
@@ -254,9 +253,31 @@ img[src="images/apple-watch-charger.jpg"] {
 
 h2 {
     grid-column: span 4;
-    grid-row: 1fr;
-    padding: 0 10px;
     margin: 0;
 
     color: #ff4422;
+}
+
+.latest {
+    margin-bottom: 100px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-container {
+    padding: 15px;
+}
+
+.height-adjust {
+    height: 250px;
+}
+
+.heading {
+    position: absolute;
+    bottom: 4px;
 }
