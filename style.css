@@ -3,7 +3,7 @@ body {
     font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
 }
 
-li {
+nav li {
     display: inline-block;
     list-style: none;
 }
@@ -254,6 +254,8 @@ img[src="images/card.png"] {
 h2 {
     grid-column: span 4;
     margin: 0;
+    
+    text-transform: capitalize;
 
     color: #ff4422;
 }
@@ -265,12 +267,9 @@ h2 {
 .category-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.category-container {
-    padding: 15px;
 }
 
 .height-adjust {
@@ -280,4 +279,37 @@ h2 {
 .heading {
     position: absolute;
     bottom: 4px;
+}
+
+.cat-latest-container {
+    display: flex;
+    flex-shrink: 0;
+
+    color: #ff4422;
+    font-size: 0.8em;
+
+    background-color: #fff4f2;
+
+}
+
+.cat-latest-container img {
+    height: 96px;
+    width: 96px;
+}
+
+.list-item {
+    margin-left: 1em;
+    padding: 6px;
+
+    border-bottom: 1px solid rgba(174, 174, 174, 0.323);
+
+    font-size: 0.8em;
+}
+
+.list-item::marker {
+    color: #ff4422;
+}
+
+.latest-description {
+    padding: 15px;
 }
