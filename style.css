@@ -34,7 +34,8 @@ ul {
     color: gray;
 }
 
-.nav-top a:hover {
+.nav-top a:hover,
+.footer-links li:hover {
     color: white;
 }
 
@@ -312,4 +313,65 @@ h2 {
 
 .latest-description {
     padding: 15px;
+}
+
+.footer-container {
+    margin-top: 100px;
+    padding: 50px 0;
+    background-color: #131313;
+
+    color: gray;
+    text-align: center;
+}
+
+.social-links {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: block;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.footer-container li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-links li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    margin: 0 10px;
+
+        background-color: #333333;
+
+    border-radius: 100%;
+
+}
+
+.footer-links li {
+    margin: 0 3px;  
+}
+
+svg {
+    position: absolute;
+}
+
+path {
+    fill: white;
+}
+
+.footer-legal {
+    height: 75px;
+    justify-content: center;
+
+    color: gray;
+    text-align: center;
+
+    background-color: black;
 }
