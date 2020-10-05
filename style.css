@@ -72,12 +72,6 @@ ul {
     border-left: 1px solid rgba(155, 155, 155, 0.282);
 }
 
-@media screen and (max-width: 1110px) {
-    .nav-bottom-right {
-        display: none;
-    }
-}
-
 .nav-bottom-right img {
     height: 100%;
 }
@@ -148,7 +142,7 @@ ul {
     grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
     margin-bottom: 80px;
-    height: 60vh;
+    height: 75vh;
     max-height: 560px;
     padding: 4px;
 }
@@ -161,7 +155,7 @@ ul {
     position: relative;
     color: white;
 
-    background-image: url(images/ipad-image.jpg);
+    background-image: url(images/Smash-Bros-Minecraft.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -222,19 +216,21 @@ ul {
     font-size: 56px;
 }
 
-.latest-news-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0fr 1fr 1fr;
+.latest-section {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.latest-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 100px;
 }
 
 .latest-container {
     padding: 10px;
 
     font-size: 0.8em;
-
 }
 
 img[src="images/apple-watch-image.jpg"],
@@ -253,7 +249,6 @@ img[src="images/card.png"] {
 }
 
 h2 {
-    grid-column: span 4;
     margin: 0;
     
     text-transform: capitalize;
@@ -268,7 +263,7 @@ h2 {
 .category-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 5px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -280,6 +275,10 @@ h2 {
 .heading {
     position: absolute;
     bottom: 4px;
+}
+
+.category-container {
+    padding: 10px;
 }
 
 .cat-latest-container {
@@ -313,6 +312,7 @@ h2 {
 
 .latest-description {
     padding: 15px;
+    flex-grow: 2;
 }
 
 .footer-container {
@@ -338,6 +338,7 @@ h2 {
 .footer-container li {
     display: inline-block;
     list-style: none;
+    margin: 0 4px;
 }
 
 .social-links li {
@@ -346,23 +347,17 @@ h2 {
     justify-content: center;
     height: 45px;
     width: 45px;
-    margin: 0 10px;
 
-        background-color: #333333;
+    background-color: #333333;
 
     border-radius: 100%;
-
 }
 
-.footer-links li {
-    margin: 0 3px;  
-}
-
-svg {
+li svg {
     position: absolute;
 }
 
-path {
+li path {
     fill: white;
 }
 
@@ -372,6 +367,113 @@ path {
 
     color: gray;
     text-align: center;
+    font-size: 0.8em;
 
     background-color: black;
+}
+
+.hide3 {
+    display: none;
+}
+
+@media screen and (max-width: 1020px) {
+    .hide {
+        display: none;
+    }
+
+    .category-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .latest-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main-article-grid {
+        height: 60vh;
+        max-height: 450px;
+        font-size: 0.9em;
+    }
+
+     #main-title {
+        font-size: 40px;
+     }
+
+     .article-title{
+         font-size: 1.3em;
+     }
+     .article-header {
+         padding: 10px;
+     }
+}
+
+@media screen and (max-width: 800px) {
+    .hide2 {
+        display: none;
+    }
+
+    .category-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .latest-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-article-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 4px;
+        height: 85vh;
+        max-height: 100%;
+    }
+
+    #grid1 {
+        grid-row: span 1;
+    }
+
+    #main-title,
+    .article-title {
+        font-size: 1.2em;
+     }
+
+
+     .article-header {
+         padding: 10px;
+     }
+
+     .nav-logo {
+         display: inline-flex;
+         justify-content: center;
+         height: 100%;
+         width: 100px;
+         background-color: black;
+     }
+
+    img[src="images/apple-watch-image.jpg"],
+    img[src="images/apple-watch-charger.jpg"] {
+        height: 75px;
+        width: 75px;
+        object-fit: cover;
+    }
+
+    .latest-container {
+        display: flex;
+    }
+    
+    .latest-container > div {
+        padding: 0 20px;
+        font-size: 0.9em;
+    }
 }
