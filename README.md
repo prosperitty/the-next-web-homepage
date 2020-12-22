@@ -1,10 +1,10 @@
 # The Next Web Homepage
 
-## Overview
+### Overview
 
 A replicate version of the next web homepage using HTML/CSS only.
 
-## Main Focus
+### Main Focus
 
 - Responsive Design
 
